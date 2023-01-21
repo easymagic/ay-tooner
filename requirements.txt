@@ -3,3 +3,4 @@ opencv-python
 Pillow
 Flask-SocketIO
 simple-websocket
+waitress
