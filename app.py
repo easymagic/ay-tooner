@@ -141,4 +141,4 @@ if __name__ == "__main__":
     # app.run(debug=True, threaded=True)
     # socket.bind(("0.0.0.0", 5000))
     from waitress import serve
-    serve(app, host="0.0.0.0", port=5000, allow_unsafe_werkzeug=True)
+    serve(app, host="0.0.0.0", port=5000)
