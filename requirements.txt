@@ -4,3 +4,4 @@ Pillow
 Flask-SocketIO
 simple-websocket
 waitress
+Flask-Cors
