@@ -6,6 +6,7 @@ from PIL import Image, ImageEnhance
 from io import StringIO
 import base64
 # from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 from flask_socketio import SocketIO, emit
 
@@ -35,6 +36,13 @@ def disconnect():
 @socket.on("cartoon-stream")
 def cartoonStream(imgData):
     emit("cartoon-stream", cartoonStreamScheme1(imgData), broadcast=True)
+
+
+@app.route("/cartoon-convertv2", methods=["POST"])
+@cross_origin()
+def cartoonConvertv2():
+    imgData = request.json["data"]
+    return cartoonStreamScheme1(imgData)
 
 
 def cartoonStreamScheme1(imgData):
