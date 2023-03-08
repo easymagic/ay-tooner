@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" />
+  </head>
+  <body>
+    <h2>Camera</h2>
+
+    <canvas id="myCanvas"></canvas>
+    <canvas id="myCanvas2"></canvas>
+    <img id="out" />
+  </body>
+  <script src="./toonv2.js"></script>
+
+  <script
+    src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+    integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    // const socket = io("http://216.24.57.3:5000");
+    // socket.on("connect", (data) => {
+    //   if (data) {
+    //     console.log("Connect start", data);
+    //   }
+    // });
+    // socket.on("cartoon-stream", (arrayBuffer) => {
+    //   if (arrayBuffer) {
+    //     let base64String = new Uint8Array(arrayBuffer).reduce(
+    //       (data, byte) => data + String.fromCharCode(byte),
+    //       ""
+    //     );
+
+    //     document.querySelector("#out").src =
+    //       "data:image/jpeg;base64," + base64String;
+
+    //     // setTimeout(() => {}, 5000);
+    //     // console.log("DS", base64String);
+    //   }
+    // });
+  </script>
+  <script src="./cam.js"></script>
+</html>
