@@ -34,10 +34,7 @@ async function transformImage(data) {
   };
   //"https://ay-tooner.onrender.com/cartoon-convertv2"
   //"http://127.0.0.1:5000/cartoon-convertv2"
-  return fetch(
-    "https://ay-tooner.onrender.com/cartoon-convertv2",
-    requestOptions
-  )
+  return fetch("http://127.0.0.1:5000/cartoon-convertv2", requestOptions)
     .then((response) => response.text())
     .catch((error) => console.log("error", error));
 }
